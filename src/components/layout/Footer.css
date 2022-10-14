@@ -1,0 +1,8 @@
+@import url('../../Colors.css');
+
+.footer {
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
