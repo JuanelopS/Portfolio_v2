@@ -20,15 +20,15 @@
 .content {
   background-color: var(--main-text-color);
   color: var(--main-bg-color);
-  min-height: 700px;
+  min-height: 535px;
   min-width: 500px;
   width: 60%;
   margin: 0 auto;
-  padding: 3rem 5rem;
+  padding: 2.7rem 5rem;
   border-radius: 6px;
   box-shadow: 0 0 30px var(--main-text-color);
   text-align: justify;
-  z-index: -99;
+  z-index: -1;
 }
 
 
@@ -38,7 +38,29 @@
   }
 }
 
+/*  */
 
+.fade-in {
+	-webkit-animation: fade-in 500ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 500ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 
 

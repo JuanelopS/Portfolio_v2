@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { BiUser, BiCodeAlt, BiListCheck, BiMailSend } from "react-icons/bi";
+import Logo from '../../assets/img/img-logo.svg';
 import './Header.css';
 
 export const Header = () => {
@@ -29,8 +30,11 @@ export const Header = () => {
       {/* main title && logo */}
 
       <div className='logo-title'>
+        <div className='logo-container'>
+          <img src={ Logo } alt="logo" className='logo-img'/>
+        </div>
         <div className='title'>
-          <h1>Juan Gavira Web</h1>
+          <h1>Juan Gavira</h1>
         </div>
       </div>
       {/* isActive es devuelto por el componente Navlink para informar si un enlace se encuentra "activo" */}

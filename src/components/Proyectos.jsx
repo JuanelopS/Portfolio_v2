@@ -6,7 +6,7 @@ import proyecto2 from '../assets/img/projects/react-gif-search.png';
 export const Proyectos = () => {
   return (
     <>
-      <div className='projects'>
+      <div className='projects fade-in'>
         <div className='project'>
           <div className='project-img'>
             <img src={ proyecto1 }/>

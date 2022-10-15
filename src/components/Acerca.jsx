@@ -23,7 +23,7 @@ export const Acerca = () => {
 
   return (
     <>
-      <div className='about'>
+      <div className='about fade-in'>
         <h2 className='about-text-title'>Bienvenid@ a mi página web...</h2>
         <div className='about-body'>
           <img className={ show ? 'about-img' : 'hidden'} src={ logo } />
@@ -53,10 +53,10 @@ export const Acerca = () => {
           </div>
         </div>
         <div className='media-icons'>
-              <FaGithub />
-              <FaTwitter />
-              <FaLinkedin />
-              <FaFreeCodeCamp />
+              <a href='https://github.com/JuanelopS' target="_blank"><FaGithub className='media-icons-animation'/></a>
+              <FaTwitter className='media-icons-animation'/>
+              <FaLinkedin className='media-icons-animation'/>
+              <FaFreeCodeCamp className='media-icons-animation'/>
         </div>
       </div>
     </>

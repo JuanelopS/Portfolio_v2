@@ -1,0 +1,97 @@
+@import url('../Colors.css');
+
+.container-form {
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form-title {
+  text-align: center;
+  margin-bottom: 13px;
+  font-size: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+label, .message-label {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+input {
+  height: 2rem;
+  border: 0;
+  border-radius: 5px;
+  width: 500px;
+  padding: 1.1rem;
+  font-size: 1.1rem;
+  font-family: 'Noticia Text', sans-serif;
+}
+
+input:focus{
+  outline: none;
+}
+
+textarea {
+  border: 0;
+  border-radius: 5px;
+  width: 500px;
+  padding: 1.1rem;
+  font-size: 1.1rem;
+  font-family: 'Noticia Text', sans-serif;
+  margin-bottom: 2rem;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+input[type=submit] {
+  align-self: center;
+  width: 40%;
+  height: 50px;
+  padding: 0;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  box-shadow: 0 0 18px var(--main-bg-color);
+}
+input[type=submit]:active {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  transform: scale(0.9);
+}
+
+.span-required {
+  color: var(--secondary-color);
+}
+
+.email-contact-option {
+  display: flex;
+  justify-content: end;
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+a:hover {
+  text-shadow: 0 0 1px var(--secondary-color);
+}
+
+
+

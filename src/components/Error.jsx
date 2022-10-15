@@ -1,5 +1,5 @@
 export const Error = () => {
   return (
-    <div>Error</div>
+    <div className="fade-in">Error</div>
   )
 }

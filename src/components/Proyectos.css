@@ -6,10 +6,8 @@
   display: grid;
   gap: 5rem;
   grid-auto-flow: dense;
-  grid-auto-rows: 34rem;
-  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr)); /* thx codely.tv*/
-  margin: 2rem;
-  justify-content: center;
+  grid-auto-rows: 28rem;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr)); /* thx codely.tv*/
 }
 
 .project {
@@ -26,7 +24,7 @@
 
 .project-img *{
   width: 100%;
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   border-radius: 8px 8px 0 0;
   border-bottom: 1px solid var(--main-bg-color);
@@ -39,6 +37,7 @@
   flex-direction: column;  
   align-items: center;
   margin-top: 12px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -49,7 +48,7 @@
 .project-links {
   font-size: 2rem;
   text-align: center;
-  padding: 6px;
+  padding: 13px;
   display: flex;
   gap: 3rem;
 }
