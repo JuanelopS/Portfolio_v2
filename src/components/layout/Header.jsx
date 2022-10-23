@@ -1,42 +1,26 @@
-import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
 import { BiUser, BiCodeAlt, BiListCheck, BiMailSend } from "react-icons/bi";
+import { NavLink, Link } from 'react-router-dom';
+
 import Logo from '../../assets/img/img-logo.svg';
 import './Header.css';
+import { Burger } from './Burger';
 
 export const Header = () => {
-
-  // para cambiar burger_class
-  const [ burgerClass, setBurgerClass ] = useState("burger-bar unclicked");
-  const [ menuClass, setMenuClass ] = useState("menu hidden");
-  const [ isMenuClicked, setIsMenuClicked ] = useState(false);
-
-  // toggle menu burger (clases css)
-  const updateMenu = () => {
-    if(!isMenuClicked){
-      setBurgerClass("burger-bar clicked");
-      setMenuClass("burger-menu visible");
-    }
-    else {
-      setBurgerClass("burger-bar unclicked");
-      setMenuClass("burger-menu hidden");
-    }
-    setIsMenuClicked(!isMenuClicked);
-  }
 
   return (
     <header className='header'>
       
       {/* main title && logo */}
-
-      <div className='logo-title'>
-        <div className='logo-container'>
-          <img src={ Logo } alt="logo" className='logo-img'/>
+      <Link to="./inicio">
+        <div className='logo-title'>
+          <div className='logo-container'>
+            <img src={ Logo } alt="logo" className='logo-img'/>
+          </div>
+          <div className='title'>
+            <h1>Juan Gavira</h1>
+          </div>
         </div>
-        <div className='title'>
-          <h1>Juan Gavira</h1>
-        </div>
-      </div>
+      </Link>
       {/* isActive es devuelto por el componente Navlink para informar si un enlace se encuentra "activo" */}
       <nav className='navbar'>
         {/* menu-items */}
@@ -68,41 +52,8 @@ export const Header = () => {
         </ul>
       </nav>
       {/* Burger menu */}
-      <div className='nav-burger'>
-          <div className="burger-btn" onClick={ updateMenu }>
-            <div className={ burgerClass }></div>
-            <div className={ burgerClass }></div>
-            <div className={ burgerClass }></div>
-          </div>
-        <div className={ menuClass }>
-        <ul className='burger-nav-list'>
-          <li className='burger-item-list'>
-            <BiUser className='item-list-icon'/>
-            <Link to='/inicio'>
-               Acerca de mí
-            </Link>
-          </li>
-          <li className='burger-item-list'>
-            <BiCodeAlt className='item-list-icon'/>
-            <Link to='/proyectos'> 
-               Portfolio 
-            </Link>
-          </li>  
-          <li className='burger-item-list'>
-            <BiListCheck className='item-list-icon'/>
-            <Link to='/curriculum'> 
-              Currículum
-            </Link>
-          </li>
-          <li className='burger-item-list'>
-            <BiMailSend className='item-list-icon'/>  
-            <Link to='/contacto'> 
-              Contacto
-            </Link>
-          </li>  
-        </ul>
-        </div>
-      </div>
+      <Burger />
+      
     </header>
   );
 };

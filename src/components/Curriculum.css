@@ -1,0 +1,49 @@
+@import url('../Colors.css');
+
+.cv-container {
+  padding: 1rem 3rem;
+}
+
+.cv-text-title {
+  margin-bottom: 4rem;
+}
+
+.cv-subtitle {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cv-subtitle {
+  color: var(--secondary-color);
+}
+
+.cv-list {
+  margin: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.cv-list-item {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1450px){
+  .cv-container{
+    padding: 1rem 2rem;
+  }
+
+  .cv-list {
+    margin-bottom: 3rem;
+  }
+
+  .cv-list-item {
+    line-height: 1.7rem;
+    font-size: 1.05rem;
+    text-align: start;
+  }
+}
+
+
+

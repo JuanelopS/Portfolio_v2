@@ -5,7 +5,7 @@ export const Contacto = () => {
   return (
     <>
       <div className='container-form fade-in'>
-        <h2 className='contact-form-title'>Formulario de Contacto</h2>
+        <h2 className='contact-form-title text-title'>Formulario de Contacto</h2>
         <form className="contact-form">
           <div className="form-group">
             <label htmlFor="name">Nombre <span className="span-required">*</span></label>
@@ -17,7 +17,7 @@ export const Contacto = () => {
           </div>
           <div className="form-group">
             <p className='message-label'>Mensaje <span className="span-required">*</span></p>
-            <textarea name="message" id="message" rows="5" maxlength="250" required></textarea>
+            <textarea name="message" id="message" rows="5" maxLength="250" required></textarea>
           </div>
           <div className="form-group">
             <input type="submit" value="Enviar" />

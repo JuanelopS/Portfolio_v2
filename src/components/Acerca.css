@@ -19,12 +19,6 @@
   color: var(--secondary-color);
 }
 
-.about-text-title {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
 .about-text-item{
   margin-bottom: 1.2rem;
   line-height: 1.4rem;

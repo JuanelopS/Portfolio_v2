@@ -6,6 +6,7 @@ import proyecto2 from '../assets/img/projects/react-gif-search.png';
 export const Proyectos = () => {
   return (
     <>
+      <h2 className='projects-text-title text-title'>Portfolio</h2>
       <div className='projects fade-in'>
         <div className='project'>
           <div className='project-img'>

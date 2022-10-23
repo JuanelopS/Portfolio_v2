@@ -4,10 +4,15 @@
 
 .projects {
   display: grid;
-  gap: 5rem;
+  gap: 8rem;
   grid-auto-flow: dense;
   grid-auto-rows: 28rem;
   grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr)); /* thx codely.tv*/
+  padding: 3rem;
+}
+
+.projects-text-title {
+  margin-bottom: 2rem;
 }
 
 .project {

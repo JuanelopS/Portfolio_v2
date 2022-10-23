@@ -5,10 +5,10 @@ import './Acerca.css';
 
 export const Acerca = () => {
 
-  /* useState y useEffect para mostrar/ocultar mi careto según el ancho de la pantalla */
+  /* useState y useEffect para mostrar/ocultar mi careto según el ancho de la pantalla (outerWidth) */
 
   const [ show, setShow ] = useState(true);
-  const minWidth = 1300;
+  const minWidth = 1500;
   
   useEffect(() => {
     outerWidth <= minWidth && setShow(false);
@@ -24,7 +24,7 @@ export const Acerca = () => {
   return (
     <>
       <div className='about fade-in'>
-        <h2 className='about-text-title'>Bienvenid@ a mi página web...</h2>
+        <h2 className='about-text-title text-title'>Bienvenid@ a mi página web...</h2>
         <div className='about-body'>
           <img className={ show ? 'about-img' : 'hidden'} src={ logo } />
           <div className='about-text'>
@@ -54,7 +54,7 @@ export const Acerca = () => {
         </div>
         <div className='media-icons'>
               <a href='https://github.com/JuanelopS' target="_blank"><FaGithub className='media-icons-animation'/></a>
-              <FaTwitter className='media-icons-animation'/>
+              <a href='https://twitter.com/juangaviraweb' target="_blank"><FaTwitter className='media-icons-animation'/></a>
               <FaLinkedin className='media-icons-animation'/>
               <FaFreeCodeCamp className='media-icons-animation'/>
         </div>
