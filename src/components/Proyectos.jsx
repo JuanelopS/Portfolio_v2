@@ -2,41 +2,63 @@ import './Proyectos.css';
 import { FaGithub, FaLink } from 'react-icons/fa';
 import proyecto1 from '../assets/img/projects/crud_js_php_mysql.png';
 import proyecto2 from '../assets/img/projects/react-gif-search.png';
+import jsicon from '../assets/img/languages/javascript.svg';
+import phpicon from '../assets/img/languages/php.svg';
+import mysqlicon from '../assets/img/languages/mysql.svg';
+import reacticon from '../assets/img/languages/react.svg';
+import bootstrapicon from '../assets/img/languages/bootstrap.svg';
+import viteicon from '../assets/img/languages/vite.svg';
 
 export const Proyectos = () => {
   return (
     <>
-      <h2 className='projects-text-title text-title'>Portfolio</h2>
+      {/* App Tienda */}
       <div className='projects fade-in'>
-        <div className='project'>
-          <div className='project-img'>
-            <img src={ proyecto1 }/>
-          </div>
-          <div className='project-text'>
-            <p className='project-text-title'>Gestión tienda online</p>
-            <p className='project-text-description'>JavaScript - PHP - MySQL - BootStrap</p>
-            <p className='project-links'>
+        <div className='project card dark'>
+          <a className='card-img-link' href="#">
+            <img className='card-img' src={ proyecto1 }alt="App Tienda" />
+          </a>
+          <div className='card-text'>
+            <div className='card-title'>
+              <h2 className='card-title-text'><a href='#'>App Tienda</a></h2>
+              <img className='card-img-logo' src={ jsicon } alt='js-icon'/>
+              <img className='card-img-logo' src={ phpicon } alt='php-icon'/>
+              <img className='card-img-logo' src={ mysqlicon } alt='mysql-icon'/>
+              <img className='card-img-logo' src={ bootstrapicon } alt='bootstrap-icon'/>
+            </div>
+            <div className='card-bar'></div>
+            <div className='card-preview-txt'>
+              Aplicación carrito de la compra desarrollada en PHP, JavaScript, MySQL con una capa de Bootstrap. Posee sistema de login y registro de usuario, panel de admin, añadir productos mediante formulario con subida de imágenes al servidor y otras funciones. Aún en desarrollo. 
+            </div>
+            <div className='card-icon-links'>
               <FaGithub />
               <FaLink />
-            </p>
+            </div>
           </div>
         </div>
-        <div className='project'>
-          <div className='project-img'>
-            <img src={ proyecto2 }/>
-          </div>
-          <div className='project-text'>
-            <p className='project-text-title'>Buscador de Gifs</p>
-            <p className='project-text-description'>React - Giphy API</p>
-            <p className='project-links'>
+      
+        {/* Gif Search */}
+          <div className='project card dark'>
+            <a class="card-img-link" href="#">
+              <img class="card-img" src={ proyecto2 }alt="App Tienda" />
+            </a>
+            <div class="card-text">
+              <div className='card-title'>
+                <h2 className='card-title-text'><a href='#'>Gif Search (Giply API)</a></h2>
+                <img className='card-img-logo' src={ reacticon } alt='react-icon'/>
+                <img className='card-img-logo' src={ viteicon } alt='vite-icon'/>
+              </div>
+              <div class="card-bar"></div>
+              <div class="card-preview-txt">
+                Desarrollada en React (y la maravilla de Vite), esta aplicación hace uso de la API de <a href='https://giphy.com/' target='_blank'>Giphy</a> para la búsqueda de imágenes en formato Gif. Cuenta con paginación y enlace a cada uno de los resultados para descargarlos desde su página.
+              </div>
+              <div className='card-icon-links'>
               <FaGithub />
               <FaLink />
-            </p>
+            </div>
+            </div>
           </div>
-        </div>
-        
       </div>
-    
     </>
   )
 }

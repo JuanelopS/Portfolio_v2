@@ -38,10 +38,10 @@ export const Curriculum = () => {
             Ciclo Formativo de Grado Superior de Administración de Sistemas Informáticos (Centro Salesiano "San Ignacio", Cádiz).
           </li>
           <li className='cv-list-item'>
-            Introducción al Desarrollo Web (Centres Innovació i Formació Ocupacional - CIFO, L'Hospitalet).
+            Introducción al Desarrollo Web - Certificado Profesional (Centres Innovació i Formació Ocupacional - CIFO, L'Hospitalet).
           </li>
           <li className='cv-list-item'>
-            Desarrollo de Aplicaciones con Tecnología Web (Grup Cief, Barcelona).
+            Desarrollo de Aplicaciones con Tecnología Web - Certificado Profesional (Grup Cief, Barcelona).
           </li>
         </ul>
         <h2 className='cv-subtitle'>
@@ -50,16 +50,16 @@ export const Curriculum = () => {
         </h2>
         <ul className='cv-list'>
           <li className='cv-list-item'>
-            Responsive Web Design (freeCodeCamp);
+            Responsive Web Design (freeCodeCamp).
           </li>
           <li className='cv-list-item'>
-            JavaScript Algorithms and Data Structures (freeCodeCamp);
+            JavaScript Algorithms and Data Structures (freeCodeCamp).
           </li>
           <li className='cv-list-item'>
-            Frond-End Web UI Frameworks and Tools: BootStrap 4 (Coursera - The Hong Kong University of Science and Technology);
+            Frond-End Web UI Frameworks and Tools: BootStrap 4 (Coursera - The Hong Kong University of Science and Technology).
           </li>
           <li className='cv-list-item'>
-            Version Control with Git (Coursera - Atlassian University);
+            Version Control with Git (Coursera - Atlassian University).
           </li>
         </ul>
         <h2 className='cv-subtitle'>

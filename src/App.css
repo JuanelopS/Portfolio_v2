@@ -7,6 +7,7 @@
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
   user-select: none;
+  text-rendering: optimizeLegibility;
 }
 
 * {
@@ -22,10 +23,10 @@
   color: var(--main-bg-color);
   min-height: 535px;
   min-width: 500px;
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
   padding: 2.7rem 5rem;
-  border-radius: 6px;
+  border-radius: 16px;
   box-shadow: 0 0 30px var(--main-text-color);
   text-align: justify;
   z-index: -1;
