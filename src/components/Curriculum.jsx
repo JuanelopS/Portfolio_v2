@@ -7,7 +7,6 @@ export const Curriculum = () => {
     <>
 
       <div className='cv-container fade-in'>
-        <h2 className='cv-text-title text-title'>Educación, Experiencia y Certificaciones</h2>
         <h2 className='cv-subtitle'>
           <MdDeveloperMode />
           Tecnologías conocidas

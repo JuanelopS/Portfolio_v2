@@ -1,12 +1,32 @@
-import React from 'react';
+import { useState, useRef } from 'react';
+import emailjs from 'emailjs-com';
+import { service, template, publicKey } from '../config/emailjs';
 import './Contacto.css';
 
 export const Contacto = () => {
+
+  const [ sent, setSent ] = useState(false);
+
+  const form = useRef();
+
+  const sendEmail = e => {
+    e.preventDefault();
+
+    /* no subir a github */
+    emailjs.sendForm(service, template, form.current, publicKey)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    setSent(true);
+    document.querySelector('.contact-form').reset();
+  }
+
   return (
     <>
       <div className='container-form fade-in'>
-        <h2 className='contact-form-title text-title'>Formulario de Contacto</h2>
-        <form className="contact-form">
+        <form ref = { form } onSubmit = { sendEmail } className="contact-form">
           <div className="form-group">
             <label htmlFor="name">Nombre <span className="span-required">*</span></label>
             <input type="text" name="name" id="name" maxLength="40" required/>
@@ -20,7 +40,14 @@ export const Contacto = () => {
             <textarea name="message" id="message" rows="5" maxLength="250" required></textarea>
           </div>
           <div className="form-group">
-            <input type="submit" value="Enviar" />
+            {
+              sent ?
+              <input type="submit" value="Mensaje Enviado!" style={{ backgroundColor: '#f04630', color: 'whitesmoke'}} disabled/>
+              :
+              <input type="submit" value="Enviar" />
+            }
+
+            
           </div>
         </form>
       </div>

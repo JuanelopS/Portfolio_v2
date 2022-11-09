@@ -24,7 +24,6 @@ export const Acerca = () => {
   return (
     <>
       <div className='about fade-in'>
-        <h2 className='about-text-title text-title'>Bienvenid@ a mi página web...</h2>
         <div className='about-body'>
           <img className={ show ? 'about-img' : 'hidden'} src={ logo } />
           <div className='about-text'>
@@ -35,11 +34,6 @@ export const Acerca = () => {
               En su momento, cursé un CGFS de Administración de Sistemas Informáticos porque me encantaba
               todo lo relacionado con la informática (aprendí a programar C de forma autodidacta en el instituto...), pero
               por desgracia nunca pude dedicarme a ello... <strong>¡HASTA AHORA!</strong>
-            </p>
-            <p className='about-text-item'>
-              Actualmente estoy realizando un curso de Desarrollo Web en Grup Cief en Barcelona (que por cierto es genial como centro) 
-              y anteriormente ya realicé otro sobre JavaScript (ES6) en CIFO L'Hospitalet (JAB enseña muy bien), y una vez termine 
-              tengo pensando seguir formándome a la vez que intento encontrar un puesto como junior.
             </p>
             <p className='about-text-item'>
               Previamente ya contaba con conocimientos de C, PHP y SQL, y por las mañanas me empapo con

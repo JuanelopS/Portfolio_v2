@@ -1,11 +1,16 @@
 @import url('../Colors.css');
 
 .container-form {
-  height: 560px;
+  height: 410px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 1rem 0;
+}
+
+.contact-form-title {
+  margin: 1.5rem 0;
 }
 
 .form-group {
@@ -16,12 +21,12 @@
 }
 
 label, .message-label {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
 }
 
 input {
-  height: 2rem;
+  height: 1.9rem;
   border: 0;
   border-radius: 5px;
   padding: 1.1rem;
@@ -39,7 +44,7 @@ textarea {
   padding: 1.1rem;
   font-size: 1.1rem;
   font-family: 'Noticia Text', sans-serif;
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
   resize: none;
 }
 
@@ -74,7 +79,7 @@ input[type=submit]:active {
 .email-contact-option {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 a {
@@ -88,12 +93,13 @@ a:hover {
 
 @media (max-width:1050px){
   .form-group {
-    width: 350px;
+    width: 320px;
   }
 
   .email-contact-option {
     width: 350px;
-    margin: 2rem auto 1rem auto;
+    padding: 0 1rem;
+    text-align: center;
   }
 }
 

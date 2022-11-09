@@ -15,12 +15,12 @@ export const Proyectos = () => {
       {/* App Tienda */}
       <div className='projects fade-in'>
         <div className='project card dark'>
-          <a className='card-img-link' href="#">
+          <a className='card-img-link' href="https://www.juangavira.me/carrito" target="_blank">
             <img className='card-img' src={ proyecto1 }alt="App Tienda" />
           </a>
           <div className='card-text'>
             <div className='card-title'>
-              <h2 className='card-title-text'><a href='#'>App Tienda</a></h2>
+              <h2 className='card-title-text'><a href='https://www.juangavira.me/carrito'>App Tienda</a></h2>
               <img className='card-img-logo' src={ jsicon } alt='js-icon'/>
               <img className='card-img-logo' src={ phpicon } alt='php-icon'/>
               <img className='card-img-logo' src={ mysqlicon } alt='mysql-icon'/>
@@ -31,30 +31,30 @@ export const Proyectos = () => {
               Aplicación carrito de la compra desarrollada en PHP, JavaScript, MySQL con una capa de Bootstrap. Posee sistema de login y registro de usuario, panel de admin, añadir productos mediante formulario con subida de imágenes al servidor y otras funciones. Aún en desarrollo. 
             </div>
             <div className='card-icon-links'>
-              <FaGithub />
-              <FaLink />
+            <a href='https://github.com/JuanelopS/Carrito' target='_blank' style={{ color: 'purple'}}><FaGithub /></a>
+            <a href='https://www.juangavira.me/carrito' target='_blank'><FaLink /></a>
             </div>
           </div>
         </div>
-      
+        
         {/* Gif Search */}
           <div className='project card dark'>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src={ proyecto2 }alt="App Tienda" />
+            <a class='card-img-link' href="https://react-gif-search.netlify.app/" target="_blank">
+              <img class='card-img' src={ proyecto2 }alt="App Tienda" />
             </a>
-            <div class="card-text">
+            <div class='card-text'>
               <div className='card-title'>
-                <h2 className='card-title-text'><a href='#'>Gif Search (Giply API)</a></h2>
+                <h2 className='card-title-text'><a href='https://react-gif-search.netlify.app/' target='_blank'>Gif Search (Giply API)</a></h2>
                 <img className='card-img-logo' src={ reacticon } alt='react-icon'/>
                 <img className='card-img-logo' src={ viteicon } alt='vite-icon'/>
               </div>
-              <div class="card-bar"></div>
-              <div class="card-preview-txt">
+              <div class='card-bar'></div>
+              <div class='card-preview-txt'>
                 Desarrollada en React (y la maravilla de Vite), esta aplicación hace uso de la API de <a href='https://giphy.com/' target='_blank'>Giphy</a> para la búsqueda de imágenes en formato Gif. Cuenta con paginación y enlace a cada uno de los resultados para descargarlos desde su página.
               </div>
               <div className='card-icon-links'>
-              <FaGithub />
-              <FaLink />
+              <a href='https://github.com/JuanelopS/Gif_Search' target='_blank' style={{ color: 'purple'}}><FaGithub /></a>
+              <a href='https://react-gif-search.netlify.app/' target='_blank'><FaLink /></a>
             </div>
             </div>
           </div>

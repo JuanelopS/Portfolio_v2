@@ -2,15 +2,14 @@
 
 .header {
   height: 115px;
-  margin: 1.5rem;
+  margin: 1.3rem;
   margin-bottom: 2.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 /* logo && main title */
-
 
 .logo-title{
   display: flex;
@@ -20,7 +19,7 @@
 
 .logo-img{
   width: 120px;
-  /* svg color a través de https://codepen.io/sosuke/pen/Pjoqqp */
+  /* svg color: https://codepen.io/sosuke/pen/Pjoqqp */
   filter: invert(38%) sepia(100%) saturate(3562%) hue-rotate(345deg) brightness(99%) contrast(91%);
 }
 
@@ -75,31 +74,27 @@
 
 .nav-burger {
   height: 5rem;
-  display: none;
   padding: 1rem;
   z-index: 3;
 }
 
 .burger-btn {
-  position: absolute;
-  right: 25px;
-  top: 40px;
   height: 48px;
-  width: 4rem;
+  width: 3rem;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; 
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   cursor: pointer;
 }
 
 /* burger button */
 
 .burger-bar {
-  width: 3rem;
-  height: 0.5rem;
+  width: 2.5rem;
+  height: 0.4rem;
   background-color: var(--secondary-color);
-  border-radius: 4px;
+  border-radius: 3px;
   z-index: 3;
 }
 
@@ -117,7 +112,9 @@
 .burger-nav-list{
   display: flex;
   flex-direction: column;
-  margin: 150px auto;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   gap: 3rem;
 }
@@ -147,11 +144,11 @@
 /* animation button */
 
 .burger-bar.clicked:nth-child(1){
-  transform: rotate(45deg) translate(0.75em, 1.25em);
+  transform: rotate(45deg) translate(0.5em, 1em);
   transition: ease-out 0.5s;
 }
 .burger-bar.clicked:nth-child(2){
-  transform: scale(0.1);
+  transform: scale(0);
   transition: ease-out 0.5s;
 }
 .burger-bar.clicked:nth-child(3){
@@ -171,18 +168,12 @@
   
   .header{
     justify-content: center;
+    justify-content: space-between;
   }
   
-  .navbar{
-    display: none;
-  }
-
-  .nav-burger{ 
-    display: flex; /* aparece burger menu*/
-  }
-
   .title{
     font-size: 2.5rem;
+    margin-left: 1rem;
   }
 
 }
@@ -192,7 +183,7 @@
     height: 70px;
   }
   .title{
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   .burger-menu{
     width: 100%;
@@ -202,10 +193,18 @@
 @media (max-width:682px){
 
   .header{
-    justify-content: space-evenly;
+    height: 30px;
+    margin: 25px 0 25px 20px;
+  }
+
+  .logo-title {
+    gap: 10px;
   }
   .title{
-    font-size: 1.4rem;
+    font-size: 1rem;
+  }
+  .logo-img {
+    width: 60px;
   }
 
 }

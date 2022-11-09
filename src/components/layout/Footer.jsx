@@ -3,7 +3,12 @@ import './Footer.css';
 export const Footer = () => {
   return (
     <footer className='footer'>
-      { new Date().getFullYear() }&copy; Juan Gavira - Desarrollo Web 
+      <p>
+        Juan Gavira { new Date().getFullYear() }  -  <a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>
+      </p>
+
     </footer>
   )
 }
+
+
