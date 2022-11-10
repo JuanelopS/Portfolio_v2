@@ -1,4 +1,4 @@
-@import url('../Colors.css');
+@import url('./Colors.css');
 
 .cv-container {
   padding: 1rem 3rem;
@@ -27,6 +27,11 @@
 .cv-list-item {
   line-height: 2rem;
   font-size: 1.2rem;
+}
+
+.certificacion-arrow-icon{
+  vertical-align: bottom;
+  margin-left: 8px;
 }
 
 @media (max-width: 1450px){

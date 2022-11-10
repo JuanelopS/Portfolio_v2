@@ -1,11 +1,10 @@
-import { MdDeveloperMode, MdLibraryBooks, MdCode, MdWork } from "react-icons/md";
-import './Curriculum.css';
+import { MdDeveloperMode, MdLibraryBooks, MdCode, MdWork, MdArrowForward } from "react-icons/md";
+import '../styles/Curriculum.css';
 
 
 export const Curriculum = () => {
   return (
     <>
-
       <div className='cv-container fade-in'>
         <h2 className='cv-subtitle'>
           <MdDeveloperMode />
@@ -13,54 +12,77 @@ export const Curriculum = () => {
         </h2>
         <ul className='cv-list'>
           <li className='cv-list-item'>
-            HTML, CSS3, SASS, BootStrap.
+            HTML, CSS3, SASS, BootStrap
           </li>
           <li className='cv-list-item'>
             JavaScript ES6
           </li>
           <li className='cv-list-item'>
-            React
+            React, Redux
           </li>
           <li className='cv-list-item'>
-            PHP, Node.JS
+            PHP, Node.JS, SQL, mySQL
           </li>
           <li className='cv-list-item'>
-            SQL, mySQL
+            Control de versiones con Git (GitHub, BitBucket, GitLab...)
           </li>
         </ul>
+
         <h2 className='cv-subtitle'>
           <MdLibraryBooks />
           Educación
         </h2>
         <ul className='cv-list'>
           <li className='cv-list-item'>
-            Ciclo Formativo de Grado Superior de Administración de Sistemas Informáticos (Centro Salesiano "San Ignacio", Cádiz).
+            Ciclo Formativo de Grado Superior de Administración de Sistemas Informáticos (Centro Salesiano "San Ignacio", Cádiz)
           </li>
           <li className='cv-list-item'>
-            Introducción al Desarrollo Web - Certificado Profesional (Centres Innovació i Formació Ocupacional - CIFO, L'Hospitalet).
+            Introducción al Desarrollo Web - Certificado Profesional (Centres Innovació i Formació Ocupacional - CIFO, L'Hospitalet)
           </li>
           <li className='cv-list-item'>
-            Desarrollo de Aplicaciones con Tecnología Web - Certificado Profesional (Grup Cief, Barcelona).
+            Desarrollo de Aplicaciones con Tecnología Web - Certificado Profesional (Grup Cief, Barcelona)
           </li>
         </ul>
+
         <h2 className='cv-subtitle'>
           <MdCode />
           Certificaciones
         </h2>
         <ul className='cv-list'>
           <li className='cv-list-item'>
-            Responsive Web Design (freeCodeCamp).
+            <div className='cv-list-item-certification'>
+              Responsive Web Design (freeCodeCamp)
+              <a href='https://www.freecodecamp.org/certification/JuanelopS/responsive-web-design' target='_blank'> 
+                <MdArrowForward size={28} className='certificacion-arrow-icon'/>
+              </a>
+            </div>
           </li>
           <li className='cv-list-item'>
-            JavaScript Algorithms and Data Structures (freeCodeCamp).
+            <div className='cv-list-item-certification'>
+              JavaScript Algorithms and Data Structures (freeCodeCamp).
+              <a href='https://www.freecodecamp.org/certification/JuanelopS/javascript-algorithms-and-data-structures' target='_blank'> 
+                <MdArrowForward size={28} className='certificacion-arrow-icon'/>
+              </a>
+            </div>
           </li>
           <li className='cv-list-item'>
-            Frond-End Web UI Frameworks and Tools: BootStrap 4 (Coursera - The Hong Kong University of Science and Technology).
+            <div className='cv-list-item-certification'>
+              Frond-End Web UI Frameworks and Tools: BootStrap 4 (Coursera - The Hong Kong University of Science and Technology)
+              <a href='https://www.coursera.org/account/accomplishments/certificate/GUPZR73XQKV2' target='_blank'> 
+                <MdArrowForward size={28} className='certificacion-arrow-icon'/>
+              </a>
+            </div>
           </li>
           <li className='cv-list-item'>
-            Version Control with Git (Coursera - Atlassian University).
+            <div className='cv-list-item-certification'>
+              Version Control with Git (Coursera - Atlassian University).
+              <a href='https://www.coursera.org/account/accomplishments/certificate/5JCPJQAVNR56' target='_blank'> 
+                <MdArrowForward size={28} className='certificacion-arrow-icon'/>
+              </a>
+            </div>
           </li>
         </ul>
+
         <h2 className='cv-subtitle'>
           <MdWork />
           Experiencia

@@ -1,13 +1,19 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import { service, template, publicKey } from '../config/emailjs';
-import './Contacto.css';
+import '../styles/Contacto.css';
 
 export const Contacto = () => {
 
   const [ sent, setSent ] = useState(false);
+  const [ emailProtected, SetEmailProtected ] = useState(true);
 
   const form = useRef();
+
+  /* Protección para el email de contacto */
+  useEffect(() => {
+    setTimeout(() => SetEmailProtected(false), 1500);
+  }, []);
 
   const sendEmail = e => {
     e.preventDefault();
@@ -52,7 +58,14 @@ export const Contacto = () => {
         </form>
       </div>
       <div className="email-contact-option">
-        <p>O si lo prefiere puede contactarme a través de <a href="mailto:contacto@juangavira.me">contacto@juangavira.me</a></p>
+        <p>O si lo prefiere puede contactarme a través de &nbsp;
+          {
+            emailProtected ? 
+            <a href="">[ protected... ]</a> 
+            :
+            <a href="mailto:contacto@juangavira.me">contacto@juangavira.me</a>
+          }
+        </p>
       </div>
     </>
   )

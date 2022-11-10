@@ -1,4 +1,4 @@
-import './Proyectos.css';
+import '../styles/Proyectos.css';
 import { FaGithub, FaLink } from 'react-icons/fa';
 import proyecto1 from '../assets/img/projects/crud_js_php_mysql.png';
 import proyecto2 from '../assets/img/projects/react-gif-search.png';
@@ -21,8 +21,8 @@ export const Proyectos = () => {
           <div className='card-text'>
             <div className='card-title'>
               <h2 className='card-title-text'><a href='https://www.juangavira.me/carrito'>App Tienda</a></h2>
-              <img className='card-img-logo' src={ jsicon } alt='js-icon'/>
               <img className='card-img-logo' src={ phpicon } alt='php-icon'/>
+              <img className='card-img-logo' src={ jsicon } alt='js-icon'/>
               <img className='card-img-logo' src={ mysqlicon } alt='mysql-icon'/>
               <img className='card-img-logo' src={ bootstrapicon } alt='bootstrap-icon'/>
             </div>

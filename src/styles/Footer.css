@@ -1,0 +1,25 @@
+@import url('./Colors.css');
+
+.footer {
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.footer-container > p{
+  margin: 1rem;
+}
+
+.react-link {
+  color: #00ddfa;
+}
+
+@media (max-width: 675px){
+  .footer{
+    font-size: 1rem;
+  }
+}

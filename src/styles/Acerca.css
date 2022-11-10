@@ -38,19 +38,15 @@
 }
 
 .about-img {
-  width: 100%;
+  width: 90%;
   height: 300px;
   border-radius: 8px;
   margin-bottom: 2rem;
   filter: drop-shadow(16px 16px 10px var(--main-bg-color));
+  border: 2px solid var(--main-bg-color);
 }
 
-
-/* clase para ocultar la foto según el innerWidth*/
-
-.hidden {
-  display: none;
-}
+/* Animista.net */
 
 .media-icons-animation {
 	-webkit-animation: media-icons-animation 0.9s both;
@@ -124,6 +120,17 @@
   }
 }
 
+
+/* Media queries */
+
+@media (max-width: 1500px){
+  .about-body{
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+
 @media (max-width:500px){
   
   .about-body {
@@ -133,3 +140,4 @@
     
   }
 }
+

@@ -1,10 +1,10 @@
 import { useState } from "react";
+import { Burger } from './Burger';
 import { BiUser, BiCodeAlt, BiListCheck, BiMailSend } from "react-icons/bi";
 import { NavLink, Link } from 'react-router-dom';
-
 import Logo from '../../assets/img/img-logo.svg';
-import './Header.css';
-import { Burger } from './Burger';
+import '../../styles/Header.css';
+
 
 export const Header = () => {
 
@@ -12,7 +12,6 @@ export const Header = () => {
 
   window.addEventListener('resize', () => {
     setWidth(window.innerWidth);
-    console.log(width)
   });
 
   return (
@@ -31,7 +30,7 @@ export const Header = () => {
       </Link>
       {/* isActive es devuelto por el componente Navlink para informar si un enlace se encuentra "activo" */}
       {  
-      width > 1425 ?
+      width > 1575 ?
       (
         <nav className='navbar'>
           {/* menu-items */}
@@ -39,25 +38,25 @@ export const Header = () => {
             <li className='item-list'>
               <BiUser className='item-list-icon'/>
               <NavLink to='/inicio' className={({ isActive }) => isActive ? "active" : ""}> 
-                Acerca de mí
+                SOBRE MÍ
               </NavLink>
             </li>
             <li className='item-list'>
               <BiCodeAlt className='item-list-icon'/>
               <NavLink to='/proyectos' className={({ isActive }) => isActive ? "active" : ""}> 
-                Portfolio 
+                PORTFOLIO 
               </NavLink>
             </li>  
             <li className='item-list'>
               <BiListCheck className='item-list-icon'/>
               <NavLink to='/curriculum' className={({ isActive }) => isActive ? "active" : ""}> 
-                Currículum
+                CURRÍCULUM
               </NavLink>
             </li>
             <li className='item-list'>
               <BiMailSend className='item-list-icon'/>  
               <NavLink to='/contacto' className={({ isActive }) => isActive ? "active" : ""}> 
-                Contacto
+                CONTACTO
               </NavLink>
             </li>  
           </ul>
