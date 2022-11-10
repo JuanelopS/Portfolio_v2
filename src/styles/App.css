@@ -19,7 +19,7 @@
 /* General */
 
 .content {
-  background-color: var(--main-text-color);
+  background: linear-gradient(45deg, rgba(227,227,227,1) 0%, rgba(191,191,191,1) 88%);
   color: var(--main-bg-color);
   min-height: 535px;
   min-width: 400px;

@@ -39,16 +39,16 @@ export const Acerca = () => {
             <p className='about-text-item'>
               <span className='about-text-highlight'>H</span>ola amig@, primero de todo muchas gracias por tu visita. 
               Te cuento... soy un proyecto de desarrollador web que intenta abrirse camino en este mundillo.
-              Después de casi 10 años trabajando como administrativo me embarco en esta nueva aventura que me apasiona. 
             </p>
             <p className='about-text-item'>
                En su momento, cursé un CGFS de Administración de Sistemas Informáticos porque me encantaba
               todo lo relacionado con la informática (aprendí a programar C de forma autodidacta en el instituto...), pero
-              por desgracia nunca pude dedicarme a ello... <strong>¡HASTA AHORA!</strong>
+              por desgracia nunca pude dedicarme a ello.
             </p>
             <p className='about-text-item'>
-              Cuento con conocimientos de JavaScript ES6+, Node.js, PHP, CSS3, SASS, SQL, Git... y ahora mismo estoy 
-              dándole duro desde hace unos meses a React y TypeScript &nbsp;
+              Cuento con conocimientos de JavaScript ES6+, Node.js, PHP, CSS3, SASS, SQL, Git...y me desenvuelvo tanto en Windows como en sistemas UNIX.
+              Actualmente, por las tardes acudo presencialmente a un curso de Desarrollo Web FullStack en Grup Cief (Barcelona) y desde hace meses por 
+              las mañanas estoy dándole duro a React, Redux y TypeScript &nbsp;
               <IconContext.Provider value={{ style: { verticalAlign: 'bottom', color: '#f04630' } }}>
                 <AiFillHeart size={24}/>
               </IconContext.Provider> 

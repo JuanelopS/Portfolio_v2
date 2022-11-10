@@ -25,15 +25,20 @@
 }
 
 .title {
-  font-size: 3rem;
-  font-family: 'Mansalva', cursive;
+  font-size: 2.2rem;
+  font-family: 'Zen Dots', cursive;
   transition: all 500ms;
   color: var(--main-text-color);
+}
+
+.title-g {
+  color: #f04630;
 }
 
 /* navigation bar */
 
 .nav-list{
+  
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -173,7 +178,7 @@
   }
   
   .title{
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     margin-left: 1rem;
   }
 
@@ -184,7 +189,7 @@
     height: 70px;
   }
   .title{
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
   .burger-menu{
     width: 100%;
@@ -199,10 +204,10 @@
   }
 
   .logo-title {
-    gap: 10px;
+    gap: 0;
   }
   .title{
-    font-size: 1rem;
+    font-size: 11px;
   }
   .logo-img {
     width: 60px;

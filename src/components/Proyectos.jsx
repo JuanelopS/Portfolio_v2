@@ -1,13 +1,18 @@
+// TODO: hacer archivo barril para estas importaciones
+
 import '../styles/Proyectos.css';
 import { FaGithub, FaLink } from 'react-icons/fa';
 import proyecto1 from '../assets/img/projects/crud_js_php_mysql.png';
 import proyecto2 from '../assets/img/projects/react-gif-search.png';
+import proyecto3 from '../assets/img/projects/portfolio-react.png';
+import proyecto4 from '../assets/img/projects/weather-react.png';
 import jsicon from '../assets/img/languages/javascript.svg';
 import phpicon from '../assets/img/languages/php.svg';
 import mysqlicon from '../assets/img/languages/mysql.svg';
 import reacticon from '../assets/img/languages/react.svg';
 import bootstrapicon from '../assets/img/languages/bootstrap.svg';
 import viteicon from '../assets/img/languages/vite.svg';
+import sassicon from '../assets/img/languages/sass.svg';
 
 export const Proyectos = () => {
   return (
@@ -40,7 +45,7 @@ export const Proyectos = () => {
         {/* Gif Search */}
           <div className='project card dark'>
             <a class='card-img-link' href="https://react-gif-search.netlify.app/" target="_blank">
-              <img class='card-img' src={ proyecto2 }alt="App Tienda" />
+              <img class='card-img' src={ proyecto2 }alt="Gif Search" />
             </a>
             <div class='card-text'>
               <div className='card-title'>
@@ -55,6 +60,51 @@ export const Proyectos = () => {
               <div className='card-icon-links'>
               <a href='https://github.com/JuanelopS/Gif_Search' target='_blank' style={{ color: 'purple'}}><FaGithub /></a>
               <a href='https://react-gif-search.netlify.app/' target='_blank'><FaLink /></a>
+            </div>
+            </div>
+          </div>
+        {/* Portfolio */}
+          <div className='project card dark'>
+            <a class='card-img-link' href="#">
+              <img class='card-img' src={ proyecto3 }alt="Portolio" />
+            </a>
+            <div class='card-text'>
+              <div className='card-title'>
+                <h2 className='card-title-text'><a href='#'>Portfolio Personal</a></h2>
+                <img className='card-img-logo' src={ reacticon } alt='react-icon'/>
+                <img className='card-img-logo' src={ viteicon } alt='vite-icon'/>
+              </div>
+              <div class='card-bar'></div>
+              <div class='card-preview-txt'>
+                Pues mismamente este humilde Portfolio personal, desarrollado en React con la ayuda de Vite. Mobile First, haciendo uso de <a href='https://www.emailjs.com/' target='_blank'>email.js</a> para el formulario de contacto y react-router-dom para la navegación por la página. Sujeto a cambios 😅.
+              </div>
+              <div className='card-icon-links'>
+              <a href='https://github.com/JuanelopS/Portfolio_v2' target='_blank' style={{ color: 'purple'}}><FaGithub /></a>
+              <a href='#' target='_blank'><FaLink /></a>
+            </div>
+            </div>
+          </div>
+        {/* WeatherApp */}
+          <div className='project card dark'>
+            <a class='card-img-link' href="#">
+              <img class='card-img' src={ proyecto4 }alt="Weather App" />
+            </a>
+            <div class='card-text'>
+              <div className='card-title'>
+                <h2 className='card-title-text'><a href='#'>WeatherApp</a></h2>
+                <img className='card-img-logo' src={ reacticon } alt='react-icon'/>
+                <img className='card-img-logo' src={ sassicon } alt='react-icon'/>
+                <img className='card-img-logo' src={ viteicon } alt='vite-icon'/>
+              </div>
+              <div class='card-bar'></div>
+              <div class='card-preview-txt'>
+                Aplicación de previsión del tiempo meteorológico. Desarrollado en React, Sass para los estilos y Vite para el despliegue. 
+                Actualmente toma la posición actual mediante la api geolocation de html5 para mostrar la información. Pensado implementar búsqueda
+                por ciudad. Actualmente en desarrollo.
+              </div>
+              <div className='card-icon-links'>
+              <a href='https://github.com/JuanelopS/WeatherApp' target='_blank' style={{ color: 'purple'}}><FaGithub /></a>
+              <a href='#' target='_blank'><FaLink /></a>
             </div>
             </div>
           </div>

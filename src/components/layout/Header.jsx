@@ -24,7 +24,7 @@ export const Header = () => {
             <img src={ Logo } alt="logo" className='logo-img'/>
           </div>
           <div className='title'>
-            <h1>Juan Gavira</h1>
+            <h1>JUAN <span className="title-g">G</span>AVIRA</h1>
           </div>
         </div>
       </Link>
