@@ -10,7 +10,7 @@ export const Footer = () => {
         </p>
         <p>
           Este portfolio ha sido desarrollado íntegramente con &nbsp;
-          <a href='https://reactjs.org/' target='_blank' className='react-link'>
+          <a href='https://reactjs.org/' target='_blank' className='react-link' alt='react-logo'>
             React.js
           </a> &nbsp;
           <img src={ reacticon } style={{width: '28px', verticalAlign: 'middle'}}/>

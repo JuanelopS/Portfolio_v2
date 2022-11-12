@@ -2,10 +2,10 @@
 
 import '../styles/Proyectos.css';
 import { FaGithub, FaLink } from 'react-icons/fa';
-import proyecto1 from '../assets/img/projects/crud_js_php_mysql.png';
-import proyecto2 from '../assets/img/projects/react-gif-search.png';
-import proyecto3 from '../assets/img/projects/portfolio-react.png';
-import proyecto4 from '../assets/img/projects/weather-react.png';
+import proyecto1 from '../assets/img/projects/proyecto_img_tienda.png';
+import proyecto2 from '../assets/img/projects/proyecto_img_gifs.png';
+import proyecto3 from '../assets/img/projects/proyecto_img_portfolio.png';
+import proyecto4 from '../assets/img/projects/proyecto_img_weather.png';
 import jsicon from '../assets/img/languages/javascript.svg';
 import phpicon from '../assets/img/languages/php.svg';
 import mysqlicon from '../assets/img/languages/mysql.svg';
@@ -21,7 +21,7 @@ export const Proyectos = () => {
       <div className='projects fade-in'>
         <div className='project card dark'>
           <a className='card-img-link' href="https://www.juangavira.me/carrito" target="_blank">
-            <img className='card-img' src={ proyecto1 }alt="App Tienda" />
+            <img className='card-img' src={ proyecto1 } alt="App Tienda" />
           </a>
           <div className='card-text'>
             <div className='card-title'>
@@ -44,17 +44,17 @@ export const Proyectos = () => {
         
         {/* Gif Search */}
           <div className='project card dark'>
-            <a class='card-img-link' href="https://react-gif-search.netlify.app/" target="_blank">
-              <img class='card-img' src={ proyecto2 }alt="Gif Search" />
+            <a className='card-img-link' href="https://react-gif-search.netlify.app/" target="_blank">
+              <img className='card-img' src={ proyecto2 } alt="Gif Search" />
             </a>
-            <div class='card-text'>
+            <div className='card-text'>
               <div className='card-title'>
                 <h2 className='card-title-text'><a href='https://react-gif-search.netlify.app/' target='_blank'>Gif Search (Giply API)</a></h2>
                 <img className='card-img-logo' src={ reacticon } alt='react-icon'/>
                 <img className='card-img-logo' src={ viteicon } alt='vite-icon'/>
               </div>
-              <div class='card-bar'></div>
-              <div class='card-preview-txt'>
+              <div className='card-bar'></div>
+              <div className='card-preview-txt'>
                 Desarrollada en React (y la maravilla de Vite), esta aplicación hace uso de la API de <a href='https://giphy.com/' target='_blank'>Giphy</a> para la búsqueda de imágenes en formato Gif. Cuenta con paginación y enlace a cada uno de los resultados para descargarlos desde su página.
               </div>
               <div className='card-icon-links'>
@@ -65,17 +65,17 @@ export const Proyectos = () => {
           </div>
         {/* Portfolio */}
           <div className='project card dark'>
-            <a class='card-img-link' href="#">
-              <img class='card-img' src={ proyecto3 }alt="Portolio" />
+            <a className='card-img-link' href='#'>
+              <img className='card-img' src={ proyecto3 } alt='Portolio' />
             </a>
-            <div class='card-text'>
+            <div className='card-text'>
               <div className='card-title'>
                 <h2 className='card-title-text'><a href='#'>Portfolio Personal</a></h2>
                 <img className='card-img-logo' src={ reacticon } alt='react-icon'/>
                 <img className='card-img-logo' src={ viteicon } alt='vite-icon'/>
               </div>
-              <div class='card-bar'></div>
-              <div class='card-preview-txt'>
+              <div className='card-bar'></div>
+              <div className='card-preview-txt'>
                 Pues mismamente este humilde Portfolio personal, desarrollado en React con la ayuda de Vite. Mobile First, haciendo uso de <a href='https://www.emailjs.com/' target='_blank'>email.js</a> para el formulario de contacto y react-router-dom para la navegación por la página. Sujeto a cambios 😅.
               </div>
               <div className='card-icon-links'>
@@ -86,18 +86,18 @@ export const Proyectos = () => {
           </div>
         {/* WeatherApp */}
           <div className='project card dark'>
-            <a class='card-img-link' href="#">
-              <img class='card-img' src={ proyecto4 }alt="Weather App" />
+            <a className='card-img-link' href='#'>
+              <img className='card-img' src={ proyecto4 } alt='Weather App' />
             </a>
-            <div class='card-text'>
+            <div className='card-text'>
               <div className='card-title'>
                 <h2 className='card-title-text'><a href='#'>WeatherApp</a></h2>
                 <img className='card-img-logo' src={ reacticon } alt='react-icon'/>
                 <img className='card-img-logo' src={ sassicon } alt='react-icon'/>
                 <img className='card-img-logo' src={ viteicon } alt='vite-icon'/>
               </div>
-              <div class='card-bar'></div>
-              <div class='card-preview-txt'>
+              <div className='card-bar'></div>
+              <div className='card-preview-txt'>
                 Aplicación de previsión del tiempo meteorológico. Desarrollado en React, Sass para los estilos y Vite para el despliegue. 
                 Actualmente toma la posición actual mediante la api geolocation de html5 para mostrar la información. Pensado implementar búsqueda
                 por ciudad. Actualmente en desarrollo.

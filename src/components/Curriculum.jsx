@@ -34,7 +34,7 @@ export const Curriculum = () => {
         </h2>
         <ul className='cv-list'>
           <li className='cv-list-item'>
-            Ciclo Formativo de Grado Superior de Administración de Sistemas Informáticos (Centro Salesiano "San Ignacio", Cádiz)
+            Ciclo Formativo de Grado Superior de Administración de Sistemas Informáticos (Colegio Salesiano "San Ignacio", Cádiz)
           </li>
           <li className='cv-list-item'>
             Introducción al Desarrollo Web - Certificado Profesional (Centres Innovació i Formació Ocupacional - CIFO, L'Hospitalet)
@@ -51,6 +51,14 @@ export const Curriculum = () => {
         <ul className='cv-list'>
           <li className='cv-list-item'>
             <div className='cv-list-item-certification'>
+              React Básico (OpenBootCamp)
+              <a href='https://community.open-bootcamp.com/user/juanelops/certificaciones/6090c8ac-37ea-4dfe-9ffd-e6858ece1931' target='_blank'> 
+                <MdArrowForward size={28} className='certificacion-arrow-icon'/>
+              </a>
+            </div>
+          </li>
+          <li className='cv-list-item'>
+            <div className='cv-list-item-certification'>
               Responsive Web Design (freeCodeCamp)
               <a href='https://www.freecodecamp.org/certification/JuanelopS/responsive-web-design' target='_blank'> 
                 <MdArrowForward size={28} className='certificacion-arrow-icon'/>
@@ -59,7 +67,7 @@ export const Curriculum = () => {
           </li>
           <li className='cv-list-item'>
             <div className='cv-list-item-certification'>
-              JavaScript Algorithms and Data Structures (freeCodeCamp).
+              JavaScript Algorithms and Data Structures (freeCodeCamp)
               <a href='https://www.freecodecamp.org/certification/JuanelopS/javascript-algorithms-and-data-structures' target='_blank'> 
                 <MdArrowForward size={28} className='certificacion-arrow-icon'/>
               </a>
@@ -75,7 +83,7 @@ export const Curriculum = () => {
           </li>
           <li className='cv-list-item'>
             <div className='cv-list-item-certification'>
-              Version Control with Git (Coursera - Atlassian University).
+              Version Control with Git (Coursera - Atlassian University)
               <a href='https://www.coursera.org/account/accomplishments/certificate/5JCPJQAVNR56' target='_blank'> 
                 <MdArrowForward size={28} className='certificacion-arrow-icon'/>
               </a>
@@ -92,7 +100,7 @@ export const Curriculum = () => {
             2013 - 2021: Administrativo (Administración de Justicia)
           </li>
           <li className='cv-list-item'>
-            2009 - 2012: Técnico Informático: HelpDesk e instalación y mantenimiento de hardware/software (Solinteg SL, Cádiz);
+            2009 - 2012: Técnico Informático: HelpDesk e instalación y mantenimiento de hardware/software (Solinteg SL, Cádiz)
           </li>
         </ul>
       </div>

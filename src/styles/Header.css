@@ -17,13 +17,13 @@
   align-items: center;
   gap: 3rem;
 }
-
+/* svg color: https://codepen.io/sosuke/pen/Pjoqqp */
+/*
 .logo-img{
   width: 120px;
-  /* svg color: https://codepen.io/sosuke/pen/Pjoqqp */
   filter: invert(38%) sepia(100%) saturate(3562%) hue-rotate(345deg) brightness(99%) contrast(91%);
 }
-
+*/
 .title {
   font-size: 2.2rem;
   font-family: 'Zen Dots', cursive;
@@ -33,6 +33,7 @@
 
 .title-g {
   color: #f04630;
+  font-size: 6rem;
 }
 
 /* navigation bar */
@@ -118,7 +119,7 @@
 .burger-nav-list{
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -150,7 +151,7 @@
 /* animation button */
 
 .burger-bar.clicked:nth-child(1){
-  transform: rotate(45deg) translate(0.5em, 1em);
+  transform: rotate(45deg) translate(0.5em, 0.9em);
   transition: ease-out 0.5s;
 }
 .burger-bar.clicked:nth-child(2){
@@ -170,15 +171,41 @@
 
 /* Media Queries */
 
-@media (max-width:1425px){
+@media (max-width:1525px){
   
   .header{
-    justify-content: center;
     justify-content: space-between;
+    margin: 1.3rem 3rem;
   }
   
   .title{
-    font-size: 1.9rem;
+    font-size: 1.8rem;
+  }
+
+  .title-g{
+    font-size: 5rem;
+  }
+
+  .nav-list{
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+
+  .item-list{
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .item-list-icon {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width:1300px){
+  
+  .title{
+    font-size: 1.8rem;
     margin-left: 1rem;
   }
 
@@ -191,6 +218,11 @@
   .title{
     font-size: 1.5rem;
   }
+
+  .title-g {
+    font-size: 4rem;
+  }
+
   .burger-menu{
     width: 100%;
   }
@@ -209,6 +241,12 @@
   .title{
     font-size: 11px;
   }
+
+  .title-g {
+    color: #f04630;
+    font-size: 2rem;
+  }
+
   .logo-img {
     width: 60px;
   }

@@ -20,9 +20,9 @@ export const Header = () => {
       {/* main title && logo */}
       <Link to="./inicio">
         <div className='logo-title'>
-          <div className='logo-container'>
+          {/* <div className='logo-container'>
             <img src={ Logo } alt="logo" className='logo-img'/>
-          </div>
+          </div> */}
           <div className='title'>
             <h1>JUAN <span className="title-g">G</span>AVIRA</h1>
           </div>
@@ -30,33 +30,31 @@ export const Header = () => {
       </Link>
       {/* isActive es devuelto por el componente Navlink para informar si un enlace se encuentra "activo" */}
       {  
-      width > 1575 ?
+      width > 1300 ?
       (
         <nav className='navbar'>
           {/* menu-items */}
           <ul className='nav-list'>
             <li className='item-list'>
-              <BiUser className='item-list-icon'/>
               <NavLink to='/inicio' className={({ isActive }) => isActive ? "active" : ""}> 
-                SOBRE MÍ
+                <BiUser className='item-list-icon'style={{ verticalAlign: 'middle' }}/> SOBRE MÍ
               </NavLink>
             </li>
             <li className='item-list'>
-              <BiCodeAlt className='item-list-icon'/>
               <NavLink to='/proyectos' className={({ isActive }) => isActive ? "active" : ""}> 
-                PORTFOLIO 
+                 <BiCodeAlt className='item-list-icon' style={{ verticalAlign: 'middle' }}/> PORTFOLIO 
               </NavLink>
             </li>  
             <li className='item-list'>
-              <BiListCheck className='item-list-icon'/>
+              
               <NavLink to='/curriculum' className={({ isActive }) => isActive ? "active" : ""}> 
-                CURRÍCULUM
+                <BiListCheck className='item-list-icon'style={{ verticalAlign: 'middle' }}/> CURRÍCULUM
               </NavLink>
             </li>
             <li className='item-list'>
-              <BiMailSend className='item-list-icon'/>  
+              
               <NavLink to='/contacto' className={({ isActive }) => isActive ? "active" : ""}> 
-                CONTACTO
+                <BiMailSend className='item-list-icon' style={{ verticalAlign: 'middle' }}/>  CONTACTO
               </NavLink>
             </li>  
           </ul>

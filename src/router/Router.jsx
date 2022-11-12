@@ -17,7 +17,7 @@ export const Router = () => {
         {/* CONTENIDO PRINCIPAL */}
         <section className = 'content'>
           <Routes>
-            <Route index element = { <Navigate to = '/inicio' /> } />
+            <Route path = '/' element = { <Navigate to = '/inicio' /> } />
             <Route path = '/inicio' element = { <Acerca /> } />
             <Route path = '/proyectos' element = { <Proyectos /> }/>
             <Route path = '/curriculum' element = { <Curriculum /> } />

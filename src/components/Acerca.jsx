@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import logo from '../assets/img/caraf.jpeg';
+import cara from '../assets/img/caraf.jpeg';
 import devIcon from '../assets/img/developer-icon.webp';
 import { FaTwitter, FaGithub, FaLinkedin, FaFreeCodeCamp } from 'react-icons/fa';
 import { AiFillHeart } from 'react-icons/ai';
@@ -17,12 +17,13 @@ export const Acerca = () => {
     outerWidth <= minWidth && setChange(false);
     
     window.addEventListener('resize', () => {
-        outerWidth <= minWidth 
-        ? (setChange(false))
-        : (setChange(true))
+        outerWidth <= minWidth ? 
+          (setChange(false))
+          : 
+          (setChange(true))
       });
 
-  }, [Acerca]);
+  }, []);
 
   return (
     <>
@@ -30,9 +31,9 @@ export const Acerca = () => {
         <div className='about-body'>
           {
             change ? 
-              <img className={'about-img'} src={ logo } />
+              <img className={'about-img'} src={ cara } alt='yo'/>
             :
-              <img className={'dev-img'} src={ devIcon } />
+              <img className={'dev-img'} src={ devIcon } alt='dev-icon'/>
           }
           
           <div className='about-text'>
@@ -62,8 +63,8 @@ export const Acerca = () => {
         <div className='media-icons'>
               <a href='https://github.com/JuanelopS' target="_blank"><FaGithub className='media-icons-animation'/></a>
               <a href='https://twitter.com/juangaviraweb' target="_blank"><FaTwitter className='media-icons-animation'/></a>
-              <FaLinkedin className='media-icons-animation'/>
-              <FaFreeCodeCamp className='media-icons-animation'/>
+              <a href='https://www.linkedin.com/in/juan-gavira-763786242' target="_blank"><FaLinkedin className='media-icons-animation'/></a>
+              <a href='https://www.freecodecamp.org/JuanelopS' target="_blank"><FaFreeCodeCamp className='media-icons-animation'/></a>
         </div>
       </div>
     </>
