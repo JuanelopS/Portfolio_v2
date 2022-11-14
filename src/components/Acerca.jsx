@@ -47,9 +47,9 @@ export const Acerca = () => {
               por desgracia nunca pude dedicarme a ello.
             </p>
             <p className='about-text-item'>
-              Cuento con conocimientos de JavaScript ES6+, Node.js, PHP, CSS3, SASS, SQL, Git...y me desenvuelvo tanto en Windows como en sistemas UNIX.
+              Cuento con conocimientos de JavaScript ES6+, React, Node.js, PHP, CSS3, SASS, SQL, Git...y me desenvuelvo tanto en Windows como en sistemas UNIX.
               Actualmente, por las tardes acudo presencialmente a un curso de Desarrollo Web FullStack en Grup Cief (Barcelona) y desde hace meses por 
-              las mañanas estoy dándole duro a React, Redux y TypeScript &nbsp;
+              las mañanas estoy liado con Redux y TypeScript &nbsp;
               <IconContext.Provider value={{ style: { verticalAlign: 'bottom', color: '#f04630' } }}>
                 <AiFillHeart size={24}/>
               </IconContext.Provider> 
