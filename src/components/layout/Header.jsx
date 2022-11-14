@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Burger } from './Burger';
 import { BiUser, BiCodeAlt, BiListCheck, BiMailSend } from "react-icons/bi";
 import { NavLink, Link } from 'react-router-dom';
-import Logo from '../../assets/img/img-logo.svg';
 import '../../styles/Header.css';
 
 
@@ -20,9 +19,6 @@ export const Header = () => {
       {/* main title && logo */}
       <Link to="./inicio">
         <div className='logo-title'>
-          {/* <div className='logo-container'>
-            <img src={ Logo } alt="logo" className='logo-img'/>
-          </div> */}
           <div className='title'>
             <h1>JUAN <span className="title-g">G</span>AVIRA</h1>
           </div>

@@ -1,4 +1,5 @@
 // TODO: hacer archivo barril para estas importaciones
+// TODO: arreglar margen con respecto del text cuando las imagenes hacen zoom
 
 import '../styles/Proyectos.css';
 import { FaGithub, FaLink } from 'react-icons/fa';
