@@ -22,17 +22,13 @@ export const Proyectos = () => {
       {/* App Tienda */}
       <div className="projects fade-in">
         <div className="project card dark">
-          <a
-            className="card-img-link"
-            href="https://www.juangavira.me/carrito"
-            target="_blank"
-          >
+          <a className="card-img-link" href="./carrito" target="_blank">
             <img className="card-img" src={proyecto1} alt="App Tienda" />
           </a>
           <div className="card-text">
             <div className="card-title">
               <h2 className="card-title-text">
-                <a href="https://www.juangavira.me/carrito">App Tienda</a>
+                <a href="./carrito">App Tienda</a>
               </h2>
               <img className="card-img-logo" src={phpicon} alt="php-icon" />
               <img className="card-img-logo" src={jsicon} alt="js-icon" />
@@ -59,7 +55,7 @@ export const Proyectos = () => {
               >
                 <FaGithub />
               </a>
-              <a href="https://www.juangavira.me/carrito" target="_blank">
+              <a href="./carrito" target="_blank">
                 <FaLink />
               </a>
             </div>
@@ -149,22 +145,25 @@ export const Proyectos = () => {
         </div>
         {/* OpenAI */}
         <div className="project card dark">
-          <a className="card-img-link" href="#">
+          <a className="card-img-link" href="https://openai-react.netlify.app/">
             <img className="card-img" src={proyecto5} alt="Weather App" />
           </a>
           <div className="card-text">
             <div className="card-title">
               <h2 className="card-title-text">
-                <a href="#">OpenAI Image Generator</a>
+                <a href="https://openai-react.netlify.app/">
+                  OpenAI Image Generator
+                </a>
               </h2>
               <img className="card-img-logo" src={reacticon} alt="react-icon" />
               <img className="card-img-logo" src={viteicon} alt="vite-icon" />
             </div>
             <div className="card-bar"></div>
             <div className="card-preview-txt">
-              Desarrollada en React, esta aplicación hace uso de la API de <a href="https://openai.com/">OpenAI</a> para 
-              generar imágenes mediante dicha Inteligencia Artificial apartir de una petición escrita realizada a 
-              través de un formulario.
+              Desarrollada en React, esta aplicación hace uso de la API de{" "}
+              <a href="https://openai.com/">OpenAI</a> para generar imágenes
+              mediante dicha Inteligencia Artificial apartir de una petición
+              escrita realizada a través de un formulario.
             </div>
             <div className="card-icon-links">
               <a

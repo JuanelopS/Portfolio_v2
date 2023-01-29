@@ -97,6 +97,9 @@ export const Curriculum = () => {
         </h2>
         <ul className='cv-list'>
           <li className='cv-list-item'>
+            2022 - Act: HelpDesk y responsable de sistemas (Zigurat Institute of Technology, Barcelona)
+          </li>
+          <li className='cv-list-item'>
             2013 - 2021: Administrativo (Administración de Justicia)
           </li>
           <li className='cv-list-item'>

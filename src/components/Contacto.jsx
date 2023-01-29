@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import emailjs from 'emailjs-com';
-import { service, template, publicKey } from '../config/emailjs';
+import { service, template, publicKey } from '../config/emailjs.js';
 import '../styles/Contacto.css';
 
 export const Contacto = () => {
