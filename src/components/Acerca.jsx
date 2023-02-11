@@ -47,12 +47,12 @@ export const Acerca = () => {
               como responsable de sistemas y helpdesk, y a su vez, soy un proyecto
               de desarrollador web que intenta abrirse camino en este mundillo.
             </p>
-            <p className="about-text-item">
+            {/* <p className="about-text-item">
               En su momento, cursé un CGFS de Administración de Sistemas
               Informáticos porque me encantaba todo lo relacionado con la
               informática (aprendí a programar C de forma autodidacta en el
               instituto...), pero por desgracia nunca pude dedicarme a ello.
-            </p>
+            </p> */}
             <p className="about-text-item">
               Cuento con conocimientos de JavaScript ES6+, React, Node.js, PHP,
               CSS3, SASS, SQL, Git... y me desenvuelvo tanto en Windows como en
